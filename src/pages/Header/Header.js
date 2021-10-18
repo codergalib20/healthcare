@@ -28,7 +28,7 @@ const Header = () => {
                     <ul>
                         <NavLink className="menu-link text-gray-700 text-lg font-bold capitalize ml-8" activeStyle={navbarMenuActiveStyle} to="/home">Home</NavLink>
                         <NavLink className="menu-link text-gray-700 text-lg font-bold capitalize ml-8" activeStyle={navbarMenuActiveStyle} to="/">Service</NavLink>
-                        <NavLink className="menu-link text-gray-700 text-lg font-bold capitalize ml-8" activeStyle={navbarMenuActiveStyle} to="/">Login</NavLink>
+                        <NavLink className="menu-link text-gray-700 text-lg font-bold capitalize ml-8" activeStyle={navbarMenuActiveStyle} to="/login">Login</NavLink>
                         <NavLink className="menu-link text-gray-700 text-lg font-bold capitalize ml-8" activeStyle={navbarMenuActiveStyle} to="/">About</NavLink>
                     </ul>
                 </div>

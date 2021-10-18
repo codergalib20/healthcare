@@ -38,7 +38,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="flex items-center justify-center">
-                        <img className="ml-7 my-5 w-full" src={PaymentCardImage} alt="" />
+                        <img className="md:ml-7 my-5 w-full" src={PaymentCardImage} alt="" />
                     </div>
                 </div>
             </section>
