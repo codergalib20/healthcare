@@ -11,6 +11,17 @@
         height: 100vh;
         background: linear-gradient(rgb(252 222 77 / 62%),rgb(77 252 115 / 48%)), url(../../images/image-1.jpg) no-repeat top center;
         background-size: cover;
+        transition: all 0.5s linear;
+        -o-transition: all 0.5s linear;
+        -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+    }
+    #responsive-menus-no-toggle ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
     }
     #responsive-menus{
         position: absolute;
@@ -20,7 +31,10 @@
         height: 100vh;
         background: linear-gradient(rgb(252 222 77 / 62%),rgb(77 252 115 / 48%)), url(../../images/image-1.jpg) no-repeat top center;
         background-size: cover;
-    
+        transition: all 0.5s linear;
+        -o-transition: all 0.5s linear;
+        -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
     }
     #responsive-menus ul {
         display: flex;
