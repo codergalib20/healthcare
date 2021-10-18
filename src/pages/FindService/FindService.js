@@ -1,7 +1,7 @@
 import React from 'react';
 
 const FindService = ({ findService }) => {
-    const { name, id, para1, para2,description,image,li1,li2,li3,li4,li5 } = findService;
+    const { name, id, para1, para2,description,image,li1,li2,li3,li4,li5 } = findService
     return (
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2 lg:gap-4" >
             <div className="text-center w-full  my-5 md:my-0">

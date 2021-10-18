@@ -1,7 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 
 const Login = () => {
+    const { signInUsingGoogle, user } = useAuth();
+    console.log(user)
     return (
         <div style={{minHeight: '500px'}} className="flex items-center justify-center">
             <div className="w-80">
@@ -15,7 +18,7 @@ const Login = () => {
                     <NavLink to="/register"> please Register</NavLink>
                 </div>
                 <div>
-                    <button className="bg-yellow-600 text-white px-8 h-12 mt-4 mx-auto flex items-center justify-between rounded-full text-2xl"><span className="mr-4"><i class="fab fa-google"></i></span> with google</button>
+                    <button onClick={signInUsingGoogle} className="bg-yellow-600 text-white px-8 h-12 mt-4 mx-auto flex items-center justify-between rounded-full text-2xl capitalize"><span className="mr-4"><i class="fab fa-google"></i></span> by google</button>
                 </div>
             </div>
         </div>
