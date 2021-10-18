@@ -1,0 +1,64 @@
+{
+  // config related to code formatting
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
+  },
+  "javascript.validate.enable": false, //disable all built-in syntax checking
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.tslint": true,
+    "source.organizeImports": true
+  },
+  "eslint.alwaysShowStatus": true,
+  // emmet
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+
+  // WorkPlace Comment Color Coustomizstion
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "Comment",
+        "scope": ["comment"],
+        "settings": {
+          "fontStyle": "italic",
+          "foreground": "#979797"
+        }
+      },
+      {
+        "name": "functions",
+        "scope": "entity.name.function",
+        "settings": {
+          "foreground": "#FFC300",
+          "fontStyle": "italic"
+        }
+      }
+    ],
+    "comments": "#FF0000",
+    "keywords": "#ff00f2",
+    "numbers": "#00e1ff",
+    "strings": "#00FF00",
+    "types": "#00b7ff",
+    "variables": "#eeff00"
+  },
+
+  "emmet.extensionsPath": ["javascript", "javascriptreact"],
+  "eslint.debug": true,
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  "eslint.quiet": true,
+  // "editor.smoothScrolling": true,
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.suggest.localityBonus": true,
+  "search.seedWithNearestWord": true
+}

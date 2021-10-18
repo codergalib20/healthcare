@@ -1,24 +1,42 @@
-import logo from './logo.svg';
+import { createContext } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
+import useFetch from './hooks/useFetch';
+import FooterBottom from './pages/Footer/FooterBottom/FooterBottom';
+import Header from './pages/Header/Header';
+import Home from './pages/Home/Home';
+import NotFoundPage from './pages/NotFound/NotFoundPage';
+import SingleService from './pages/SingleService/SingleService';
+
+
+export const useServices = createContext()
+
 
 function App() {
+  const [services] = useFetch()
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <useServices.Provider value={[services]}>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Header/>
+            <Home/>
+            <FooterBottom/>
+          </Route>
+          <Route path="/home">
+            <Header/>
+            <Home/>
+          </Route>
+          <Route path="/serviceItem/:serviceID">
+            <Header/>
+            <SingleService/>
+          </Route>
+          <Route path="*">
+            <NotFoundPage/>
+          </Route>
+        </Switch>
+      </Router>
+    </useServices.Provider>
   );
 }
 

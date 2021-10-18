@@ -1,0 +1,51 @@
+.menu-handle{
+    display: none;
+}
+
+@media only screen and (max-width: 1026px) {
+    #responsive-menus-no-toggle{
+        left: -100%;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(rgb(252 222 77 / 62%),rgb(77 252 115 / 48%)), url(../../images/image-1.jpg) no-repeat top center;
+        background-size: cover;
+    }
+    #responsive-menus{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(rgb(252 222 77 / 62%),rgb(77 252 115 / 48%)), url(../../images/image-1.jpg) no-repeat top center;
+        background-size: cover;
+    
+    }
+    #responsive-menus ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+    }
+    .menu-link{
+        color: #fff !important;
+        margin-top: 1rem;
+    }
+    
+    /*----------Responsive Toggle Menu Icon--------*/
+    .menu-handle{
+        display: block;
+        font-size: 2rem;
+        color: #333;
+        cursor: pointer;
+        transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+    }
+    .menu-handle:hover{
+        color: #e83a3b;
+    }
+}
