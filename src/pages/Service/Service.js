@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 // service card style___________
 const serViceCardStyle = {
@@ -9,7 +9,7 @@ const serViceCardStyle = {
 
 const Service = ({ service }) => {
     const { name, description, id, image } = service;
-    const url = `/serviceItem/${id}`;
+
     return (
         <div style={serViceCardStyle} className="text-center shadow-lg hover:shadow-xl transition-all duration-300 ease-linear flex items-center justify-between flex-col border-8 border-white overflow-hidden">
             <div>
@@ -22,7 +22,7 @@ const Service = ({ service }) => {
             </div>
             </div>
             <div className="py-4 bg-gray-300 w-full">
-                <Link className="transition-all duration-300 ease-linear text-white bg-red-500 hover:bg-red-700 font-medium rounded-md text-lg py-2 px-5" to={url}>Find Details</Link>
+                <NavLink to={`/serviceItem/${id}`} className="transition-all duration-300 ease-linear text-white bg-red-500 hover:bg-red-700 font-medium rounded-md text-lg py-2 px-5">Find Details</NavLink>
             </div>
         </div>
     );

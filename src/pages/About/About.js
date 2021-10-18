@@ -10,7 +10,7 @@ const aboutSectionStyle = {
 const About = () => {
     return (
         <div style={aboutSectionStyle}>
-            <div className="container mx-auto grid lg:grid-cols-2 gap-4 text-justify py-8">
+            <div className="container px-3 mx-auto grid lg:grid-cols-2 gap-4 text-justify py-8">
                 <div>
                     <h2 className="about-header text-4xl text-left font-bold text-white">welcome to Galib's medizoid general Hospital</h2>
                     <p className=" text-md md:text-lg font-medium text-gray-200 py-4 border-b border-gray-400">Extraordinary crimes against the people and the state had to be avenged by agents extraordinary. Two such people are John Steed, top professional; and his partner, Emma Peel, talented amateur… otherwise known as The Avengers.</p>

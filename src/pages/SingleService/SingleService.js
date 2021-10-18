@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { useParams } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 import { useServices } from '../../App';
 import FindItemBanner from '../FindItemBanner/FindItemBanner';
 import FindService from '../FindService/FindService';
@@ -7,17 +7,27 @@ import FindService from '../FindService/FindService';
 
 const SingleService = () => {
     const { serviceID } = useParams()
-    console.log(serviceID);
     const [services] = useContext(useServices);
-   
+   const history = useHistory()
 
-    const findService = services.find(service => service.id == 4)
+    const findService = services.find(service => service.id === Number(serviceID))
+    console.log(findService)
 
     return (
         <div>
-            <FindItemBanner  findService={findService} />
+            {
+                findService ?
+                    <FindItemBanner findService={findService} />
+                    :
+                    <div></div>
+           }
             <div className="container-fluid px-3 lg:container mx-auto py-6 ">
-              <FindService findService={findService} />
+                {
+                    findService ?
+                        <FindService findService={findService} />
+                        :
+                        history.push('/home')        
+                }
             </div>
         </div>
     );
