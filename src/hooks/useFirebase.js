@@ -32,8 +32,18 @@ const useFirebase = () => {
         setPassword(e.target.value);
     }
 
-    const handleFormcontrol = e => {
-        e.preventDefault()
+    const updateUserName = () => {
+        updateProfile(auth.currentUser, {
+            displayName: name
+          }).then(() => {
+            
+          }).catch((error) => {
+           
+          });
+    }
+
+    const handleFormcontrol = event => {
+        event.preventDefault();
         if (password.length < 6) {
             setError('password must be 6 charactar long')
             return;
@@ -54,10 +64,9 @@ const useFirebase = () => {
         signInWithEmailAndPassword(auth, email, password)
             .then(result => {
                 const user = result.user
-
                 setUser(user)
                 setError('')
-                setUserName()
+                // setUserName()
             })
             .catch(error => {
                 setError(error.message)
@@ -73,7 +82,7 @@ const useFirebase = () => {
         createUserWithEmailAndPassword(auth, email, password)
             .then(result => {
                 const user = result.user
-                console.log(user);
+                updateUserName()
                 setUser(result.user)
                 setError('')
             })
