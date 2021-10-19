@@ -1,12 +1,19 @@
 import React from 'react';
+import footerBackgroundImage from '../../images/footer_lodyas.png';
 import FooterLogo from '../../images/medizoid_Logo.webp';
 import PaymentCardImage from '../../images/payment-cart.png';
 
+
+const footerStyleCoustom = {
+    background: `url(${footerBackgroundImage}) center center no-repeat`,
+    backgroundSize: 'cover',
+    backgroundAttachment : 'fixed'
+}
 const Footer = () => {
     return (
         <div>
             {/* ==============Footer Top================ */}
-            <section className="bg-gray-500">
+            <section style={footerStyleCoustom} >
                 <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 ">
                     <div className="md:border-r py-5 md:border-red-500">
                         <img className=" w-56" src={FooterLogo} alt="" />

@@ -26,7 +26,7 @@ const SingleService = () => {
                     findService ?
                         <FindService findService={findService} />
                         :
-                        history.push('/home')        
+                        history.push('/')        
                 }
             </div>
         </div>

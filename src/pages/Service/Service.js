@@ -11,18 +11,18 @@ const Service = ({ service }) => {
     const { name, description, id, image } = service;
 
     return (
-        <div style={serViceCardStyle} className="text-center shadow-lg hover:shadow-xl transition-all duration-300 ease-linear flex items-center justify-between flex-col border-8 border-white overflow-hidden">
+        <div style={serViceCardStyle} className="text-center shadow-lg hover:shadow-xl transition-all duration-300 ease-linear flex items-center justify-between flex-col overflow-hidden">
             <div>
             <div className="overflow-hidden w-full h-72">
                 <img className="min-w-full cursor-pointer min-h-full transform scale-100 hover:scale-110 transition-all duration-300 ease-linear" src={image} alt="" />
             </div>
-            <div className="py-4 px-5">
-                <h3 className="text-2xl font-medium py-2">{name}</h3>
-                <p className="py-2">{ description.substring(0,200)}</p>
+            <div className="py-1 px-1">
+                <h3 className="text-2xl font-medium py-1">{name}</h3>
+                <p className="py-1">{ description.substring(0,200)}</p>
             </div>
             </div>
-            <div className="py-4 bg-gray-300 w-full">
-                <NavLink to={`/serviceItem/${id}`} className="transition-all duration-300 ease-linear text-white bg-red-500 hover:bg-red-700 font-medium rounded-md text-lg py-2 px-5">Find Details</NavLink>
+            <div className="py-3 bg-indigo-900 w-full">
+                <NavLink to={`/serviceItem/${id}`} className="transition-all duration-300 ease-linear text-indigo-100 border-2 border-white hover:bg-white hover:text-indigo-800 font-medium rounded-md text-lg py-1 px-3">Find Details</NavLink>
             </div>
         </div>
     );

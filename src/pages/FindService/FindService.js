@@ -4,11 +4,11 @@ const FindService = ({ findService }) => {
     const { name, id, para1, para2,description,image,li1,li2,li3,li4,li5 } = findService
     return (
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2 lg:gap-4" >
-            <div className="text-center w-full  my-5 md:my-0">
+            <div className="text-center w-full my-8  md:my-4">
                 <img className="m-auto w-full" src={image} alt="" />
             </div>
             <div className="xl:col-span-2">
-                <h2 className="text-4xl font-bold text-yellow-600">{name}</h2>
+                <h2 className="text-4xl font-bold text-indigo-600">{name}</h2>
                 <p className="md:text-lg font-medium text-gray-500 pb-3 text-justify">{description}</p>
                 <div className="border-b border-red-300"></div>
                 <div className="flex py-7">

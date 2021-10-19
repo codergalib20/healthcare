@@ -94,5 +94,37 @@
     "li3": "Emergency Care",
     "li4": "Pharmacy Support",
     "li5": "24/7 Special Service"
+  },
+  {
+    "id": 7,
+    "name": "Pediatrician Clinic",
+    "description": "My kinda people, my kinda place. There’s something special about this place. Got no reason to stray too far, ’cause it’s all right here in my own backyard! This is a Burger King town, it’s made just for me! This is a Burger King town, we know how burgers should be! Right up the road, left at the sign. My way, your way, one at a time, hot off the fire with anything on it! And don’t it feel good when it’s just how you want it? This is a Burger King town, it’s made just for me! This is a Burger King town, we know how burgers should be!",
+    "image": "https://i.ibb.co/8XDWxqd/Depositphotos-11882261-original-400x400.jpg",
+    "facebookUrl": "",
+    "linkdineUrl": "",
+    "instagramUrl": "",
+    "para1": "In time of ancient gods, warlords and kings, a land in turmoil cried out for a hero. She was Xena, a mighty princess forged in the heat of battle. The power. The passion. The danger. Her courage will change the world.",
+    "para2": "It seems today that all you see is violence in movies and sex on tv, but where are those good old-fashioned values on which we used to rely? Lucky there’s a family guy, lucky there’s a man who positively can do all the things that make us laugh and cry – he’s our family guy!",
+    "li1": "Outdoor Checkup",
+    "li2": "Operation Theater Service",
+    "li3": "Emergency Care",
+    "li4": "Pharmacy Support",
+    "li5": "24/7 Special Service"
+  },
+  {
+    "id": 8,
+    "name": "Competitive Doctors",
+    "description": "In an age when nature and magic rule the world, there is an extraordinary legend: the story of a warrior who communicates with animals, who fights sorcery and the unnatural. His name is Dar, last of his tribe. He is also called Beastmaster.",
+    "image": "https://i.ibb.co/Ctd1cJg/service-5-400x400.jpg",
+    "facebookUrl": "",
+    "linkdineUrl": "",
+    "instagramUrl": "",
+    "para1": "In time of ancient gods, warlords and kings, a land in turmoil cried out for a hero. She was Xena, a mighty princess forged in the heat of battle. The power. The passion. The danger. Her courage will change the world.",
+    "para2": "It seems today that all you see is violence in movies and sex on tv, but where are those good old-fashioned values on which we used to rely? Lucky there’s a family guy, lucky there’s a man who positively can do all the things that make us laugh and cry – he’s our family guy!",
+    "li1": "Outdoor Checkup",
+    "li2": "Operation Theater Service",
+    "li3": "Emergency Care",
+    "li4": "Pharmacy Support",
+    "li5": "24/7 Special Service"
   }
 ]

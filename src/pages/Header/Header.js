@@ -32,27 +32,31 @@ const Header = () => {
                 </div>
                 <div id={menuRes ? "responsive-menus" : "responsive-menus-no-toggle"}>
                     <ul className="flex items-center" >
-                        <NavLink className="menu-link text-gray-700 text-lg font-bold capitalize ml-8" activeStyle={navbarMenuActiveStyle} to="/home">Home</NavLink>
-                        <NavLink className="menu-link text-gray-700 text-lg font-bold capitalize ml-8" activeStyle={navbarMenuActiveStyle} to="/">Service</NavLink>
-                        <NavLink className="menu-link text-gray-700 text-lg font-bold capitalize ml-8" activeStyle={navbarMenuActiveStyle} to="/">About</NavLink>
+                        <NavLink className="menu-link text-gray-700 text-lg font-bold capitalize  lg:ml-8" activeStyle={navbarMenuActiveStyle} to="/home">Home</NavLink>
+                        <NavLink className="menu-link text-gray-700 text-lg font-bold capitalize  lg:ml-8" activeStyle={navbarMenuActiveStyle} to="/doctors">Doctors</NavLink>
+                        <NavLink className="menu-link text-gray-700 text-lg font-bold capitalize  lg:ml-8" activeStyle={navbarMenuActiveStyle} to="/hospital">Hospital</NavLink>
                         {/* ------------Show Login and Log Out Button or Link by condition------------ */}
                         {
                             user.email ?
-                                <button onClick={logOut} className="menu-link text-gray-700 text-lg font-bold capitalize ml-8">Logout</button>
+                                (
+                                    <button onClick={logOut} className="menu-link text-gray-700 text-lg font-bold capitalize lg:ml-8">Logout</button>
+                                )
                                    :
-                                <NavLink className="menu-link text-gray-700 text-lg font-bold capitalize ml-8" activeStyle={navbarMenuActiveStyle} to="/login">Login</NavLink>
-                        }
+                                (
+                                    <NavLink className="menu-link text-gray-700 text-lg font-bold capitalize lg:ml-8" activeStyle={navbarMenuActiveStyle} to="/login">Login</NavLink>
+                                )
+                                }
                         {/* --------Show user Image-------- */}
                                 {
-                                    user.photoURL?
+                                    user.photoURL !== undefined?
                                         <div className="w-10 h-10 mx-3 rounded-full overflow-hidden">
-                                            <img className="w-full" src={user.photoURL} alt={user.photoURL} />
+                                            <img className="w-full" src={user.photoURL} alt={user.displayName} />
                                         </div>
                                              :
                                          <div></div>
                                 }
                             {/* ------Show User Names----- */}
-                            <span className="text-lg font-medium capitalize">
+                            <span className="text-lg font-medium text-gray-100 lg:text-gray-900 capitalize">
                                 {
                                     user.displayName ?
                                         user.displayName
