@@ -1,5 +1,4 @@
 import 'animate.css';
-import 'aos/dist/aos.css';
 import { createContext } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
@@ -60,7 +59,7 @@ function App() {
                 <Footer/>
               </Route>
               
-              <Route path="*">
+              <Route exact path="*">
                 <NotFoundPage/>
               </Route>
             
