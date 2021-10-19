@@ -33,7 +33,7 @@ const Register = () => {
                   
                     <input onBlur={handleEmailChange} className="outline-none border-2 border-yellow-500 py-1 px-3 w-full mb-2 text-yellow-600 text-lg font-medium" type="email" placeholder="E-mail" />
                     <input onBlur={handlePasswordChange} className="outline-none border-2 border-yellow-500 py-1 px-3 w-full mb-2 text-yellow-600 text-lg font-medium" type="password" placeholder="Password" />
-                    <button className="text-lg text-yellow-100 font-medium bg-yellow-600 hover:bg-transparent py-1 px-8 shadow-inner hover:shadow-inner border-2 hover:text-yellow-600 border-yellow-500">Login</button>
+                    <button className="text-lg text-yellow-100 font-medium bg-yellow-600 hover:bg-transparent py-1 px-8 shadow-inner hover:shadow-inner border-2 hover:text-yellow-600 border-yellow-500">Register</button>
                 </form>
                 <div className="flex justify-between py-2">
                     <span className="text-yellow-900 text-lg font-medium">Are You are already signed in? </span>
