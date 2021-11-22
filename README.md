@@ -2,7 +2,7 @@
 
  Site Code Link [Code Link](https://github.com/Programming-Hero-Web-Course3/healthcare-related-website-Asadullah-Hil-Galib).
 
-Site Code Link [Live Link](https://general-hospital-423e4.web.app/).
+Site Live Link [Live Link](https://general-hospital-423e4.web.app/).
 
 Github Profile Link [Github Profile](https://github.com/Asadullah-Hil-Galib).
 
